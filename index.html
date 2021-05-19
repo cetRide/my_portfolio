@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cetric Okola | Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/particles.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+<input type="checkbox" id="side-nav-checkbox"/>
+<label for="side-nav-checkbox" id="side-nav-overlay"></label>
+<div class="static">
+    <div id="top-bar" class="top-bar">
+        <span>Cetric.</span>
+        <label for="side-nav-checkbox">
+            <span>&#9776;</span>
+        </label>
+    </div>
+    <div class="toggle-up">
+        <a href="#home">&#8593;</a>
+    </div>
+</div>
+<div class="container" id="home">
+    <div class="the-cont">
+        <div class="mobile-image">
+            <div class="right-cont">
+                <img  src="image/cet.jpg" alt="">
+            </div>
+        </div>
+        <div class="left-cont">
+            <p><span class="danger-color">Howdy, </span>I'm <span id="typeline"></span> <br>
+                Based in Nairobi, Kenya</p>
+            <div>
+                <a href="#contact-me">
+                    <button class="contact-button">Let's Talk !</button>
+                </a>
+                <button class="download-button">Download CV</button>
+            </div>
+        </div>
+        <div class="right-cont">
+            <img style='' src="image/cet.jpg" alt="">
+        </div>
+    </div>
+    <canvas class="background"></canvas>
+</div>
+<div class="conts" id="services">
+    services
+</div>
+<div class="conts" id="skills">
+    skills
+</div>
+<div class="conts" id="contact-me">
+    <h1>Contact ME</h1>
+</div>
+<div class="side-nav">
+    <div class="items">
+        <a onclick="disable()" href="#home">Home</a>
+        <a onclick="disable()" href="#services">Services</a>
+        <a onclick="disable()" href="#skills">Skills</a>
+        <a onclick="disable()" href="#">Projects</a>
+        <a onclick="disable()" href="#contact-me">Contact Me</a>
+        <a onclick="disable()" href="#">Blogs</a>
+    </div>
+</div>
+<script>
+    function disable() {
+    document.getElementById('side-nav-checkbox').checked = false
+} </script>
+</body>
+</html>
